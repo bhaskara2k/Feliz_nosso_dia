@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História de Amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <div class="music-control">
+        <audio id="bgMusic" loop>
+            <source src="./Lady Gaga, Bruno Mars - Die With A Smile.mp3" type="audio/mp3">
+        </audio>
+        <button onclick="toggleMusic()" class="music-btn">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="slide fade active">
+                <img src="./1.jpeg" alt="Momentos Especiais 1">
+            </div>
+            <div class="slide fade">
+                <img src="./2.jpeg" alt="Momentos Especiais 2">
+            </div>
+            <div class="slide fade">
+                <img src="./3.jpeg" alt="Momentos Especiais 3">
+            </div>
+            <div class="slide fade">
+                <img src="./4.jpeg" alt="Momentos Especiais 4">
+            </div>
+            <div class="slide fade">
+                <img src="./5.jpeg" alt="Momentos Especiais 5">
+            </div>
+            <div class="slide fade">
+                <img src="./6.jpeg" alt="Momentos Especiais 6">
+            </div>
+            <div class="slide fade">
+                <img src="./7.jpeg" alt="Momentos Especiais 7">
+            </div>
+            <div class="slide fade">
+                <img src="./8.jpeg" alt="Momentos Especiais 8">
+            </div>
+            <div class="slide fade">
+                <img src="./9.jpeg" alt="Momentos Especiais 9">
+            </div>
+            <div class="slide fade">
+                <img src="./10.jpeg" alt="Momentos Especiais 10">
+            </div>
+            <div class="slide fade">
+                <img src="./11.jpeg" alt="Momentos Especiais 11">
+            </div>
+            <div class="slide fade">
+                <img src="./12.jpeg" alt="Momentos Especiais 12">
+            </div>
+            <div class="slide fade">
+                <img src="./13.jpeg" alt="Momentos Especiais 13">
+            </div>
+            <div class="slide fade">
+                <img src="./14.jpeg" alt="Momentos Especiais 14">
+            </div>
+            <div class="slide fade">
+                <img src="./15.jpeg" alt="Momentos Especiais 15">
+            </div>
+            <div class="slide fade">
+                <img src="./16.jpeg" alt="Momentos Especiais 16">
+            </div>
+
+            <button class="prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="counter-section">
+            <h2>Nossa História de Amor</h2>
+            <div id="counter"></div>
+        </div>
+
+        <div class="message">
+            <p>"Em cada momento ao seu lado, descubro um novo significado para a felicidade. Você é minha inspiração diária, meu amor eterno, minha melhor escolha."</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
